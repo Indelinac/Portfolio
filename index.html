@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--_____________________________________________________________________________________________-->
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+      <title>Portfolio - Dlc Inès</title>
+      <link rel="icon" type="favicon" href="/media/logo.png">
+   </head>
+<!--_____________________________________________________________________________________________-->
+	<body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <img id="logo" src="/media/logo.png" alt="logo">
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#about_me"><mark>#</mark>A propos de moi</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#skills"><mark>#</mark>Compétences</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#project"><mark>#</mark>Projets</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact"><mark>#</mark>Contact</a></div>
+                </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#about_me"><mark>#</mark>A propos de moi</a>
+                    <a href="#hard-skills"><mark>#</mark>Compétences</a>
+                    <a href="#project"><mark>#</mark>Projets</a>
+                    <a href="mailto:ines.delinac@iut.uca.fr"><mark>#</mark>Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+
+<!--_____________________________________________________________________________________________-->
+        <div id="main">
+
+<!--_____________________________________________________________________________________________-->
+            <div id="popup" class="popup">
+                <p> Mise à jour en cours, je travaille dessus...  <br><br> Merci de patienter !</p>
+                <a href="#projet" class="close-btn">Fermer</a>
+            </div>
+            <div class="overlay"></div>
+<!--_____________________________________________________________________________________________-->
+
+            <section id="about_me">
+                <div class="content">
+                    <h1 > Bonjour, je suis Inès Delinac</h1>
+                    <h2 class="typewriter" >Je suis <mark><span class="typewriter-text"></span><label for="">|</label></mark>.</h2> 
+                    <p > Je me nomme Delinac Inès, j’ai 19 ans et je suis étudiante en première année de BUT Informatique.<br><br>
+                        Je suis une personne emplie de curiosité, toujours à la recherche de nouvelles connaissances, mais 
+                         souhaitant aussi approfondir certains domaines comme l’informatique. En effet, je suis dans l’optique de devenir une développeuse polyvalente. Pour le moment, les secteurs d’activités qui me plairaient le plus sont la création de sites internet, mais aussi la gestion de bases de données en SQL.
+                        <br><br>Actuellement, je souhaite suivre ma formation en tant qu’alternante en 2ème année. </p>
+                    
+                    <div class="btn" id="pop">
+                        <button><a href="mailto:ines.delinac@iut.uca.fr"> Me contacter </a> </button>
+                    </div>
+                </div>
+                <div id="photo-presentation" >
+                    <img src="media/me.png" alt="Inès Delinac">
+                    <div id="status">   
+                        <div class="box"></div>
+                        <p>Travail sur le <strong>portfolio</strong></p>
+                    </div>
+                </div>
+                
+            </section>
+
+<!--_____________________________________________________________________________________________-->
+            <section id="cursus">
+                <div class="title">
+                    <h2 ><mark>#</mark> Formation & CV</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div id="combined">        
+                    <div id="lists">
+                        <article class="list" id="first-list">
+                            <div>
+                                <h3>But informatique</h3>
+                                <h4> 2023 - 2025 </h4>
+                                <p><em><strong>IUT Clermont-Auvergne à Aubière,</strong></em>  Etudiante en BUT informatique</p>
+                            </div>
+                        </article>
+
+                        <div class="doted-line"></div>
+
+                        <article class="list" id="second-list">
+                            <div>
+                                <h3>Baccalauréat général</h3>
+                                <h4> 2020 - 2023 </h4> 
+                                <p><em><strong>Lycée Jeanne d'Arc à Clermont-Ferrand,</strong></em> <br>Bac général avec les spécialités Maths, SVT et NSI.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div>
+                        <img src="media/cv_ines-delinac.png" alt="CV">
+                        <div class="btn" id="pop">
+                            <button >            
+                                <a href="media/cv_ines-delinac.pdf" download>
+                                    <i class='bx bx-download'></i> Télécharger
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!--_____________________________________________________________________________________________-->
+
+        
+<!--_____________________________________________________________________________________________-->
+            <section id="hard-skills">
+                <h2 ><mark>#</mark> Compétences</h2>
+                <div class="line"></div>
+
+                <div class="container">
+                    <button class="btn" onclick="afficherSection('web', this)">
+                        Programmation web <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="web" class="section">
+                        <div class="bar"><div class="bar-fill" data-width="90%">95%</div></div>
+                        <p>
+                            &lt;information&gt; <br><br>
+                            Ayant toujours été curieuse au sujet de la constitution des sites web, au collège, je passais mon temps à inspecter les pages web pour essayer de comprendre leur fonctionnement. 
+                            Cela fait partie des raisons pour lesquelles j’ai intégré le but informatique. Ainsi, j’ai pu apprendre certains langages qui constituent les sites internet, mais j’ai pour projet d’apprendre le React aussi.
+                            <br><br>&lt;/information&gt;
+                        </p>
+                        <article class="code">
+                            <div class="langage" ><i class='bx bxl-html5' ></i> <p> HTML </p></div>
+                            <div class="langage"><i class='bx bxl-css3' ></i> <p> CSS </p></div>
+                            <div class="langage"><i class='bx bxl-php'  ></i><p> PHP</p></div>
+                        </article>
+                    </div>
+            
+                    <button class="btn" onclick="afficherSection('algo', this)">
+                        Programmation algorithmique <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="algo" class="section">
+                        <div class="bar"><div class="bar-fill" data-width="85%">85%</div></div>
+                        <p>
+                            Class Informations { <br><br>
+                            Lors de nombreux TD et TP, j’ai appris certains langages que j’ai su appliquer lors de projets de groupe au sein de mon BUT Informatique.
+                            <br><br>};
+                        </p>
+                        <article class="code">
+                            <div class="langage" > <p> C </p></div>
+                            <div class="langage"><i class='bx bxl-c-plus-plus'></i></i> <p> C++ </p></div>
+                            <div class="langage"><p> C#</p></div>
+                            <div class="langage"><i class='bx bxl-python'></i></i><p> Python</p></div>
+                        </article>
+                    </div>
+            
+                    <button class="btn" onclick="afficherSection('bdd', this)">
+                        Base de donnée  <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="bdd" class="section">
+                        <div class="bar"><div class="bar-fill" data-width="70%">70%</div></div>
+                        <p>
+                            CREATE TABLE INFORMATIONS { <br><br>
+                            Lors de nombreux TP et TP, j’ai appris à construire une base de données de la conception à la réalisation sous forme de code SQL. Pour cela, je sais réaliser un modèle conceptuel ou logique de donnée et le traduire en langage SQL.
+                            <br><br>}
+                            <article class="code">
+                                <div class="langage" > <i class='bx bxl-postgresql'></i><p> SQL </p></div>
+                            </article>
+                        </p>
+                    </div>
+            
+                    <button class="btn" onclick="afficherSection('system', this)">
+                        Système & Réseau <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="system" class="section">
+                        <div class="bar"><div class="bar-fill" data-width="30%">50%</div></div>
+                        <p>
+                            #!/bin/bash<br>
+                            <br>
+                            Lors de nombreux TD et TP, j’ai eu l’occasion d’utiliser le système d’exploitation linux et réaliser des scripts shell sur VIM. 
+                            Par la suite, j’ai aussi fait des configurations simples de machines sur un réseau.
+                        </p>
+                        <article class="code">
+                            <div class="langage" >  <i class='bx bx-terminal'></i><p> Shell </p></div>
+                        </article>
+                    </div> 
+                    
+                    <button class="btn" onclick="afficherSection('tools', this)">
+                        Outils utilisés <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="tools" class="section">
+                        <p> 
+                            Durant mes années d’études, j’ai su apprendre à utiliser de nouveaux outils facilement, je suis capable de m’adapter à toutes sortes de logiciels pour un projet afin de le mener à bien. </br></br>
+                            J’ai notamment utilisé Figma pour réaliser des maquettes de projet et storyboard ainsi que Canvas pour les persona, schéma, CV, mais aussi Draw.io pour réaliser des MCD ou MLD ou tout autres schémas.
+                            Enfin, lors de projets informatiques en groupe, j’ai appris à utiliser Git et Docker. 
+                        </p>
+                        <article class="code">
+                            <div class="langage" > <i class='bx bxl-git'></i><p> Git </p></div>
+                            <div class="langage" > <i class='bx bxl-docker'  ></i><p> Docker </p></div>
+                        </article>
+                    </div>
+            
+                    <button class="btn" onclick="afficherSection('langage', this)">
+                        Langues <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div id="langage" class="section">
+                        <p>
+                            Durant mes nombreuses années d’études, j’ai appris ces langues que j’ai perfectionnées à l’aide de vidéos, séries et film 
+                            comme par exemple Las chicas del cable pour l’espagnol et les vidéos du TEDx Talk pour l’anglais.
+                        </p>
+                        <article class="code">
+                            <div class="langage" > <p> Anglais B2/C1 </p></div>
+                            <div class="langage" > <p> Espagnol B1 </p></div>
+                        </article>
+                    </div>
+            
+                </div>
+                <p> </br>* jauges basées sur le niveau maximum attendu d'un élève de première année en BUT informatique</p>
+            
+            </section>
+
+<!--_____________________________________________________________________________________________-->
+            <section id="soft-skills">
+                <h2 ><mark>#</mark> Qualités</h2>
+                <div class="line"></div>
+
+                <div class="part">
+                    <div class="box2">
+                       <i class='bx bx-palette' style='color:#c778dd79'></i>
+                          <h3>Créativité</h3>
+                          <p>
+                            Capacité à imaginer, concevoir et concrétiser des idées nouvelles ou originales, en s'inspirant de son environnement, de ses expériences ou d'une réflexion innovante.
+                          </p>
+                    </div>
+        
+                    <div class="box2">
+                       <i class='bx bx-customize' style='color:#c778dd79'  ></i>
+                          <h3>Capacité d’adaptation</h3>
+                          <p>
+                            Aptitude à anticiper, ajuster et modifier son comportement, ses stratégies ou sa pensée en fonction des circonstances, des défis ou des évolutions d’un environnement donné.
+                          </p>                
+                    </div>
+        
+                    <div class="box2">
+                       <i class='bx bx-donate-heart' style='color:#c778dd79'></i>
+                          <h3>Empathie</h3>
+                          <p>
+                            Faculté de comprendre et de ressentir les émotions, les besoins et les perspectives d’autrui, en se mettant à sa place avec bienveillance et ouverture d’esprit.
+                          </p>                 
+                    </div>
+        
+                    <div class="box2">
+                       <i class='bx bx-user-voice' style='color:#c778dd79'></i>
+                          <h3>Patience</h3>
+                          <p>
+                            Disposition à rester calme et persévérant face aux difficultés, aux attentes ou aux obstacles, sans se décourager.
+                          </p>                
+                    </div>
+                 </div>
+                
+            </section>
+
+<!--_____________________________________________________________________________________________-->
+            <section id="project">
+                <div class="title">
+                    <h2 ><mark>#</mark> Projets</h2>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="gallery">
+                    <div class="arrow" onclick="moveSlide(-1)">&#10094;</div>
+                    <div class="carousel-container">
+                        <div class="carousel" id="carousel">
+                            <div class="carousel-item">
+                                <img src="media/sae102.png" >
+                                <div class="carousel-contents">
+                                    <div class="carousel-text">
+                                        <h4>SAE 1.02</h4>
+                                        <p>Jeu en ligne de commande</p>
+                                    </div>
+                                    <a href="#popup" class="carousel-btn">Voir plus</a>
+                                </div>    
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="media/blueberryPyLogo.png" >
+                                <div class="carousel-contents">
+                                    <div class="carousel-text">
+                                        <h4>SAE 1.04</h4>
+                                        <p> Création d'une base de données</p>
+                                    </div>
+                                    <a href="#popup" class="carousel-btn">Voir plus</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="media/dataBerryPy.png">
+                                <div class="carousel-contents">
+                                    <div class="carousel-text">
+                                        <h4>SAE 2.04</h4>
+                                        <p> Etude d'une base de données</p>
+                                    </div>
+                                    <a href="#popup" class="carousel-btn">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow" onclick="moveSlide(1)">&#10095;</div>
+                </div>
+            </section>
+
+        </div>
+    <!--_____________________________________________________________________________________________-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({offset:0});
+        </script>
+        <script src="script.js"></script>
+<!--_____________________________________________________________________________________________-->
+
+
+        <div class="separator"></div>
+
+    <footer id="scroll-footer"> 
+        <p> Made with ♥ and a lot of coffee <i class='bx bx-coffee-togo'></i> </p>
+        <p> ©Copyright 2025 </p>
+    </footer>
+    </body>    
+</html>
