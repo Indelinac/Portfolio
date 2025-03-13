@@ -124,7 +124,7 @@
     }
     .nav-container .links a{
         position: relative;
-        font-size: 1.2rem;
+        font-size: 1.5em;
         color: white;
         margin: 0 20px;
         text-decoration: none;
@@ -174,10 +174,10 @@
     }
 
     .logo{
-        font-size: 2rem;
+        font-size: 1.5em;
         font-weight: bold;
-        color: #c778dd79;
         text-shadow: 0 0 10px #c778dd79;
+        color: #4c4c4c;
         margin-top: 6px;
     }
 
