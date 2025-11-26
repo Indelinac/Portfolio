@@ -1,0 +1,134 @@
+/*_________Global Styles_________*/
+body {
+    overflow-x: hidden;
+    display : flex;
+    flex-direction: column;
+
+    font-family: courier; 
+    background-color: #282C33;
+    color: #c0b3c7;
+}
+
+#main {
+    flex-grow: 1;
+    width: 100%;
+    min-height: 60vh;
+    margin-bottom: 100px; 
+}
+
+p {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.3rem;
+}
+
+mark {
+    background-color: transparent; 
+    color: #c778dd79;
+}
+
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 15%;
+    width: 40%;
+    height: 1.5px;
+    background-color: #c778dd79;
+}
+
+/*_________Arrow_________*/
+.back-arrow {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #c778dd79;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.back-arrow:hover {
+    transform: translateX(-4px);
+}
+
+/*_________Project Container_________*/
+.project-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-section { 
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    .line{
+        margin-left: 50%;
+    }
+}
+
+/*_________Gallery_________*/
+.gallery {
+    display: grid;
+    margin-top: 20px;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*_________Tableau_________*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #c778dd79;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/*________Footer_________*/
+
+#scroll-footer {
+    width: 100%;
+    background-color: #282C33;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0px -4px 2px #0000000b;
+    border-radius: 50px 50px 0 0;
+    padding: 15px 0;
+    position: fixed;
+    bottom: -150px; /* Start hidden */
+    transition: bottom 0.4s ease-in-out;
+}
+
+
+#scroll-footer.visible {
+    bottom: -20px; 
+}
